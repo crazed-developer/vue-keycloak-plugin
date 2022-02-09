@@ -1,0 +1,40 @@
+{
+  "name": "@nobelium/vue-keycloak-plugin",
+  "version": "1.0.1",
+  "description": "Keycloak plugin for Vue 3, and Composition API",
+  "main": "dist/index.esm.js",
+  "author": {
+    "name": "Steffen Otto Jensen",
+    "email": "cecotto196@gmail.com",
+    "url": "https://www.nobelium-aps.dk"
+  },
+  "homepage": "https://github.com/crazed-developer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crazed-developer/vue-keycloak-plugin"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build:clean && npm run build:compile && npm run build:bundle",
+    "build:clean": "rimraf dist && rimraf transpiled",
+    "build:compile": "tsc -p .",
+    "build:bundle": "rollup --config rollup.config.js"
+  },
+  "keywords": [
+    "Vue3",
+    "keycloak",
+    "composition-api"
+  ],
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "keycloak-js": "^16.1.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.67.1",
+    "typescript": "^4.5.5",
+    "vue": "^3.2.29"
+  },
+  "peerDependencies": {
+    "keycloak-js": "^16.1.1",
+    "vue": "^3.2.29"
+  }
+}
