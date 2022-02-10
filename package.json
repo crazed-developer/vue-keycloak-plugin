@@ -1,8 +1,9 @@
 {
   "name": "@nobelium/vue-keycloak-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Keycloak plugin for Vue 3, and Composition API",
   "main": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "author": {
     "name": "Steffen Otto Jensen",
     "email": "cecotto196@gmail.com",
